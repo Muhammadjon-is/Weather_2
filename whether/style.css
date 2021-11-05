@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .day{
+    width: 50%;
+    background: linear-gradient(rgb(105, 178, 219), white) ;
+}
+
+.day img:nth-child(1){
+    height: 160px;
+    transform: translateX(40px);
+}
+.day img:nth-child(2){
+    position: absolute;
+    height: 180px;
+    transform: translateX(-80px) translateY(20px);
+}
+
+header .night{
+    width: 50%;
+    background: linear-gradient(rgb(17, 39, 71), white) ;
+}
+
+.night img:nth-child(1){
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    height: 130px;
+}
+.night img:nth-child(2){
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    height: 160px;
+}
+
+header img{
+    height: 100px;
+}
+
+
+
+
+.container{
+    position: relative;
+    border: 6px solid rgb(112, 173, 158);
+    padding: 24px;
+    border-radius: 22px;
+    background-color: rgb(173, 233, 218);
+    z-index: 1;
+} 
+
+
+
+
+
+
+.main{
+    width: 100%;
+    height: 87%;
+    border-radius: 0 0 22px 22px;
+    display: flex;
+}
+
+
+.showcase{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+#icon img{
+    height: 160px;
+    transform: translateY(-30px);
+}
+.temperature-value{
+    font-size: 70px;
+    color: rgb(29, 24, 24);
+    transform: translateY(-30px);
+}
+.temperature-value p{
+    font-weight: bold;
+}
+
+.notification{
+    width: 30%;
+    height: 20vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.toast{
+    padding: 2rem;
+    background-color: rgb(226, 11, 11);
+    color: #fff;
+    border-radius: 8px;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+.description{
+    color: rgb(65, 64, 64);
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+}
+.city{
+    color: rgb(41, 40, 40);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-top: 14px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.time{
+    color: rgb(65, 64, 64);
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+
